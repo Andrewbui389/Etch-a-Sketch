@@ -12,9 +12,15 @@ for (let i = 0; i<x; i++ ){
     grid.appendChild(gridSquare)
 }
 
+
+function color(){
+    let colorChoose = document.querySelector("#color").value
+    return colorChoose
+}
+
 const container = Array.from(document.querySelectorAll('.grid-items'));
 container.forEach(key => key.addEventListener('mouseover', e =>{
-    e.target.style.backgroundColor = 'red';
+    e.target.style.backgroundColor = color();
 } ));
 
 console.log(container)
