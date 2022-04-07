@@ -23,6 +23,8 @@ container.forEach(key => key.addEventListener('mouseover', e =>{
     e.target.style.backgroundColor = color();
 } ));
 
+
+
 console.log(container)
 
 function restart(){
